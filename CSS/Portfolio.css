@@ -179,6 +179,17 @@ textarea {
     box-shadow: 0px 0px 17px 7px white;
 }
 
+#name,
+#mail {
+    width: 47%;
+}
+
+.contact label[for="mail"] {
+    position: relative;
+    bottom: 33px;
+    left: 44px;
+}
+
 /* PROJECT PAGE */
 
 .card {
@@ -199,6 +210,14 @@ textarea {
     .grayline {
         color: gray;
     }
+}
+
+.card img {
+    width: 50%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px solid #7dd3fc;
 }
 
 .card img:hover {
@@ -290,4 +309,133 @@ textarea {
     text-align: center;
     line-height: 20px;
     transition: width 1.5s ease;
+}
+
+/* RESPONSIVE */
+@media (max-width: 720px) {
+    .navbar ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0;
+    }
+
+    .navbar ul li a {
+        font-size: 1.5rem;
+    }
+
+    .footer {
+        font-size: 1.4rem;
+    }
+
+    .introduction {
+        font-size: 2rem;
+        line-height: 40px;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .bio {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .image img {
+        width: 40%;
+    }
+
+    .bio>p,
+    .bio {
+        font-size: 1.9rem;
+        line-height: 36px;
+    }
+
+    .goaltitle {
+        font-size: 3rem;
+        margin: 0;
+        position: relative;
+        bottom: 2%;
+    }
+
+    .goals {
+        flex-direction: column;
+        position: relative;
+        bottom: 2%;
+        font-size: 2rem;
+    }
+
+    .goals>div {
+        width: 70vw;
+    }
+
+    .mq {
+        position: relative;
+        bottom: 4%;
+        font-size: 2rem;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .content {
+        margin-top: 17%;
+        font-size: 2rem;
+    }
+
+    .projtitle {
+        font-size: 3rem;
+    }
+
+    .skilltitle {
+        font-size: 3rem;
+    }
+
+    .skills {
+        height: 45%;
+        font-size: 2rem;
+    }
+
+    .html,
+    .css,
+    .js,
+    .cpp {
+        line-height: 110%;
+        border-radius: 25px;
+    }
+
+    .contact {
+        font-size: 1.5rem;
+        width: 80%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #mail,
+    #name {
+        width: 100%;
+    }
+
+    .contact label[for="mail"] {
+        position: static;
+    }
+
+    #button {
+        font-size: 1.5rem;
+    }
+
+    #name::placeholder, #mail::placeholder, #sub::placeholder, #msg::placeholder {
+        font-size: 1.5rem;
+        font-size: 1.5rem;
+    }
 }
