@@ -311,6 +311,10 @@ textarea {
     transition: width 1.5s ease;
 }
 
+.skills h2 {
+    margin-bottom: 8px;
+}
+
 /* RESPONSIVE */
 @media (max-width: 720px) {
     .navbar ul {
@@ -439,3 +443,4 @@ textarea {
         font-size: 1.5rem;
     }
 }
+
