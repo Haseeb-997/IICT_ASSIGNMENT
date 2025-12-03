@@ -135,7 +135,7 @@ body {
 .image img {
     width: 120px;
     animation: up ease-in-out;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 @keyframes up {
@@ -479,3 +479,4 @@ textarea {
         padding: 10px 0;
     }
 }
+
